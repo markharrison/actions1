@@ -23,6 +23,9 @@ jobs:
         uses: docker://alpine:3.8
         with:
           args: 'ls -a'
+        env:
+          FRED-DATA : "freddy"
+           
           
       - name: My second step
         run: |
