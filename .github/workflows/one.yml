@@ -22,7 +22,7 @@ jobs:
       - name: My first step
         uses: docker://alpine:3.8
         with:
-          args: ls
+          args: 'ls -a'
           
       - name: My second step
         run: |
