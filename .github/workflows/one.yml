@@ -24,7 +24,7 @@ jobs:
         with:
           args: 'ls -a'
         env:
-          FRED-DATA : "freddy"
+          FRED_DATA : "freddy"
            
           
       - name: My second step
