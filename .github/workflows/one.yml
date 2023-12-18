@@ -20,7 +20,8 @@ jobs:
           retention-days: 5
                   
       - name: My first step
-        uses: docker://alpine:3.8
+        uses: docker://centos:latest
+
         with:
           args: 'printf "%s\n" "$PATH" "$FRED_DATA"'
         env:
