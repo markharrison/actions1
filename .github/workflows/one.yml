@@ -24,3 +24,6 @@ jobs:
         with:
           arg: ls
           
+      - name: My first step
+        run: |
+          docker run alpine:3.8 sh -c "echo 'Hello from Alpine'"
