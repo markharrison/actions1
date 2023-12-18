@@ -19,3 +19,5 @@ jobs:
           path: ./
           retention-days: 5
                   
+      - name: My first step
+        uses: docker://alpine:3.8
