@@ -21,3 +21,6 @@ jobs:
                   
       - name: My first step
         uses: docker://alpine:3.8
+        with:
+          arg: ls
+          
