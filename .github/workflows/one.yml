@@ -22,8 +22,10 @@ jobs:
       - name: My first step
         uses: docker://alpine:3.8
         with:
-          arg: ls
+          args: ls
           
-      - name: My first step
+      - name: My second step
         run: |
           docker run alpine:3.8 sh -c "echo 'Hello from Alpine'"
+
+ 
