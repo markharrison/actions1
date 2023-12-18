@@ -22,7 +22,7 @@ jobs:
       - name: My first step
         uses: docker://alpine:3.8
         with:
-          args: 'echo The value of FRED_DATA is: $FRED_DATA'
+          args: 'echo The value of FRED_DATA is: \$FRED_DATA'
         env:
           FRED_DATA : "freddy"
            
