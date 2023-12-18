@@ -20,10 +20,9 @@ jobs:
           retention-days: 5
                   
       - name: My first step
-        uses: docker://centos:latest
-
+        uses: docker://alpine:3.8 
         with:
-          args: 'printf "%s\n" "$PATH" "$FRED_DATA"'
+          args: "sh -c 'echo $PATH' "
         env:
           FRED_DATA : "freddy"
            
