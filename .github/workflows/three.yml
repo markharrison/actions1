@@ -30,6 +30,7 @@ jobs:
         run: |
           echo "::debug::Set the Octocat variable" 
           echo "::error file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
+          echo "::notice file=README.md,line=11,col=15,endColumn=7::Missing hash"
   job2:
     runs-on: ubuntu-latest
     needs: job1
