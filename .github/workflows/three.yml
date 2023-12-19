@@ -22,6 +22,7 @@ jobs:
         run: echo "{markdown content}" >> $GITHUB_STEP_SUMMARY
 
   job2:
+    needs: [job1]
     uses: markharrison/actions1/.github/workflows/four.yml@main
     with:
       param1: "param x"
