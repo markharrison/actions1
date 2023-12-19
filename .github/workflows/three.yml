@@ -37,3 +37,7 @@ jobs:
         env:
           SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
         run: echo "The selected color is $SELECTED_COLOR"
+
+      - name: Fred
+        run: echo "{markdown content}" >> $GITHUB_STEP_SUMMARY
+        
