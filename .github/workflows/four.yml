@@ -1,0 +1,23 @@
+name: Four
+on:
+  workflow_call:
+    inputs:
+      param1:
+        required: true
+        type: string
+      param2: 
+        type: string
+    secrets:
+      registry_username:
+        required: true
+      registry_password:
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:      
+
+      - name: Run a one-line script
+        run: echo "Hello, world! "
