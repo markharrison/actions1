@@ -5,6 +5,9 @@ on:
 
 jobs:
   check-bats-version:
+    permissions:
+      issues: write
+      
     runs-on: ubuntu-latest
     steps:
         - uses: actions/github-script@0.8.0
